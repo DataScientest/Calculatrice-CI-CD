@@ -12,6 +12,11 @@ jobs:
         name: Checkout 
         uses: actions/checkout@v2
       -
+        name: Test
+        run: python -m pip install --upgrade pip
+        run: pip install unittest
+        run: python -m unittest -v ./sources/test_calc.py
+      -
         name: Build and push
         uses: mr-smithers-excellent/docker-build-push@v5
         with: 
