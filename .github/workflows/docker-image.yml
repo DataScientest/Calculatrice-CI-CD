@@ -13,11 +13,14 @@ jobs:
         uses: actions/checkout@v2
       -
         name: Build and push
-        uses: mr-smithers-excellent/docker-build-push@v4
+        uses: mr-smithers-excellent/docker-build-push@v5
         with: 
           image: ffranc95/calc
           registry: docker.io
+          dockerfile: ./sources/Dockerfile
           username: ${{ secrets.DOCKER_USERNAME }}
           password: ${{ secrets.DOCKER_PWD }}
+          
+          
           
 
