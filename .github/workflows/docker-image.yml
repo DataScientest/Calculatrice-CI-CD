@@ -12,9 +12,13 @@ jobs:
         name: Checkout 
         uses: actions/checkout@v2
       -
-        name: Test
+        name: Upgrade Pip
         run: python -m pip install --upgrade pip
+      -
+        name: Install unittest
         run: pip install unittest
+      - 
+        name: Make test
         run: python -m unittest -v ./sources/test_calc.py
       -
         name: Build and push
