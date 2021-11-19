@@ -18,6 +18,7 @@ jobs:
           image: ffranc95/calc
           registry: docker.io
           directory: ./sources
+          addLatest: True
           dockerfile: ./sources/Dockerfile
           username: ${{ secrets.DOCKER_USERNAME }}
           password: ${{ secrets.DOCKER_PWD }}
