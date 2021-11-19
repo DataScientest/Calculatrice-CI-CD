@@ -36,6 +36,18 @@ class Test(unittest.TestCase):
         """
         self.assertIsNone(calc.sous("31","-"))
 
+    def test_modulo(self):
+        """
+        Le résultat de 8 modulo 2 est 0
+        """
+        self.assertEqual(calc.modulo(8,2),0)
+
+    def test_modulo_str(self):
+        """
+        Le résultat de 8 modulo da ne doit rien retourner
+        """
+        self.assertIsNone(calc.modulo(8,"da"))
+    
     def test_sous_float(self):        
         """
         La soustraction entre 2 float ne doit rien retourner.
