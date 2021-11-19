@@ -30,6 +30,7 @@ jobs:
         with:
           image: docker-hub-repo/image-name
           registry: docker.io
+          dockerfile: ./sources/Dockerfile
           directory: ./sources
           username: ${{ secrets.DOCKER_USERNAME }}
           password: ${{ secrets.DOCKER_PWD }}
