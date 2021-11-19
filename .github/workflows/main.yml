@@ -28,7 +28,7 @@ jobs:
         name: Build and push 
         uses: mr-smithers-excellent/docker-build-push@v5
         with:
-          image: docker-hub-repo/image-name
+          image: ffranc95/calc
           registry: docker.io
           dockerfile: ./sources/Dockerfile
           directory: ./sources
