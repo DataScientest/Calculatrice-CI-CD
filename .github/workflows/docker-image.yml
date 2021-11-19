@@ -17,6 +17,7 @@ jobs:
         with: 
           image: ffranc95/calc
           registry: docker.io
+          build: ./sources
           dockerfile: ./sources/Dockerfile
           username: ${{ secrets.DOCKER_USERNAME }}
           password: ${{ secrets.DOCKER_PWD }}
