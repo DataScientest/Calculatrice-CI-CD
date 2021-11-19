@@ -27,5 +27,5 @@ jobs:
         uses: docker/build-push-action@v2
         with:
           push: true
-          tags: ffranc95/calc:$(date +%s)
+          tags: ffranc95/calc:latest
 
